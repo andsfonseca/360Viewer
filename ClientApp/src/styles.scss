@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+// $fa-font-path: "~font-awesome/fonts";
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
+html, body, #fullheight {
+    min-height: 100% !important;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+.fill{
+    min-height: 100% !important;
+    height: 100%;
+    width: 100%;
+}
+
+html{
+    overflow-y: hidden;
+}

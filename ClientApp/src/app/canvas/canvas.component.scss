@@ -1,0 +1,77 @@
+.canvasArea{
+    display: flex;
+}
+
+.canvasContainer{
+    flex: 1
+}
+
+.settingsContainer{
+    width: 300px;    
+}
+
+.statsContainer{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modal-inside {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+    padding-left: 300px;
+    width: auto;
+    height: auto;
+}
+
+.modal-inside > .modal-fullscreen{
+    width: auto;
+}
+
+.canvas-front{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+    margin-left: 0;
+}
+
+.selection-container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.selection-folder{
+    display: flex;
+    flex-direction: column;
+}
+
+.selection-folder > .card{
+   flex: 1;
+   width: 300px;
+   margin-right: 5px;
+}
+
+.selection-file{
+    width: 100%;
+}
+.selection-file > .card{
+    height: 100%;
+}
+
+.card-loading-message{
+    height: 200px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+.card-loading-text{
+    margin: auto;
+}
+
+

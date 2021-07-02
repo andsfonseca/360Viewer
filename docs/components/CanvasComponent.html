@@ -1,0 +1,3892 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>client360-map documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">client360-map documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>CanvasComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/canvas/canvas.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-canvas</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./canvas.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./canvas.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#camera">camera</a>
+                            </li>
+                            <li>
+                                <a href="#canvasComponent">canvasComponent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#canvasHeight">canvasHeight</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#canvasWidth">canvasWidth</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#controls">controls</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#equirectangularFolderCurrentSelected">equirectangularFolderCurrentSelected</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#equirectangularImageCurrentSelected">equirectangularImageCurrentSelected</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#equirectangularMesh">equirectangularMesh</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#equirectangularMetadatas">equirectangularMetadatas</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#FAR">FAR</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#FOV">FOV</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#fpsCounter">fpsCounter</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#fpsTimer">fpsTimer</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#hasToCallRender">hasToCallRender</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#modelBadgeName">modelBadgeName</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#modelCurrentSelected">modelCurrentSelected</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#modelFileName">modelFileName</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#modelMesh">modelMesh</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#modelsFolderCurrentSelected">modelsFolderCurrentSelected</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#modelsMetadatas">modelsMetadatas</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#NEAR">NEAR</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#scenario">scenario</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#scenarioTreeView">scenarioTreeView</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#scene">scene</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#trianglesCounter">trianglesCounter</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#webGLRenderer">webGLRenderer</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addCamera">addCamera</a>
+                            </li>
+                            <li>
+                                <a href="#createLights">createLights</a>
+                            </li>
+                            <li>
+                                <a href="#initCanvas">initCanvas</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#OnChangeCameraPosition">OnChangeCameraPosition</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#OnChangeEquirectangularImageRotation">OnChangeEquirectangularImageRotation</a>
+                            </li>
+                            <li>
+                                <a href="#OnClickCanvas">OnClickCanvas</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#OnClickFolderImage">OnClickFolderImage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#OnClickFolderModel">OnClickFolderModel</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#OnClickPathImage">OnClickPathImage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#OnClickPathModel">OnClickPathModel</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#OnClickSelectImage">OnClickSelectImage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#OnClickSelectModel">OnClickSelectModel</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#OnControlsChangeCameraPosition">OnControlsChangeCameraPosition</a>
+                            </li>
+                            <li>
+                                <a href="#OnControlsLockAndKeyDown">OnControlsLockAndKeyDown</a>
+                            </li>
+                            <li>
+                                <a href="#reloadCamera">reloadCamera</a>
+                            </li>
+                            <li>
+                                <a href="#render">render</a>
+                            </li>
+                            <li>
+                                <a href="#renderLoop">renderLoop</a>
+                            </li>
+                            <li>
+                                <a href="#resetWindows">resetWindows</a>
+                            </li>
+                            <li>
+                                <a href="#setModel">setModel</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>HostListeners</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#window:keydown">window:keydown</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(DOMRenderer: <a href="https://angular.io/api/core/Renderer2" target="_blank">Renderer2</a>, resources: <a href="../injectables/ResourcesService.html">ResourcesService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="176" class="link-to-prism">src/app/canvas/canvas.component.ts:176</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Construtor do Componente Canvas</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>DOMRenderer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/Renderer2" target="_blank" >Renderer2</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>(Injenção de Dependência) Renderer do DOM </p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>resources</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ResourcesService.html" target="_self" >ResourcesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>(Injenção de Dependência) Serviço responsável por se comunicar com o servidor </p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+    <section>
+    <h3>HostListeners</h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="window:keydown"></a>
+                    <span class="name">
+                        <b>
+                            window:keydown
+                        </b>
+                        <a href="#window:keydown"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <i>Arguments : </i><code>'$event' </code>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>window:keydown(event: KeyboardEvent)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="680"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:680</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executado quando uma tecla é usada</p>
+</div>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addCamera"></a>
+                    <span class="name">
+                        <b>
+                            addCamera
+                        </b>
+                        <a href="#addCamera"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addCamera(folder, filename)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="314"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:314</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Carrega uma nova Configuração de Camera</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>folder</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Pasta do arquivo da Imagem 360 que está no Fundo da Câmera</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>filename</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Nome do arquivo da Imagem 360 que está no Fundo da Câmera</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createLights"></a>
+                    <span class="name">
+                        <b>
+                            createLights
+                        </b>
+                        <a href="#createLights"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createLights()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="299"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:299</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Cria as Luzes</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initCanvas"></a>
+                    <span class="name">
+                        <b>
+                            initCanvas
+                        </b>
+                        <a href="#initCanvas"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initCanvas()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="225"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:225</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Inicializa o Canvas</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="195"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:195</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executado ao Inicializar os atributos do Componente.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="OnChangeCameraPosition"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            OnChangeCameraPosition
+                        </b>
+                        <a href="#OnChangeCameraPosition"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>OnChangeCameraPosition(render: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="525"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:525</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executado quando ocorre alguma alteração na câmera</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>render</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>true</code>
+                                    </td>
+
+                                    <td>
+                                        <p>Informa se deve renderizar ou não</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="OnChangeEquirectangularImageRotation"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            OnChangeEquirectangularImageRotation
+                        </b>
+                        <a href="#OnChangeEquirectangularImageRotation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>OnChangeEquirectangularImageRotation(render: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="587"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:587</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executado ao mudar o slider da rotação da Imagem Equiretangular.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>render</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>true</code>
+                                    </td>
+
+                                    <td>
+                                        <p>Informa se deve renderizar ou não</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="OnClickCanvas"></a>
+                    <span class="name">
+                        <b>
+                            OnClickCanvas
+                        </b>
+                        <a href="#OnClickCanvas"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>OnClickCanvas()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="668"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:668</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executado ao Clicar no Canvas</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="OnClickFolderImage"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            OnClickFolderImage
+                        </b>
+                        <a href="#OnClickFolderImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>OnClickFolderImage(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="439"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:439</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executado quando clica-se no botão de uma pasta</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Index da Pasta</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="OnClickFolderModel"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            OnClickFolderModel
+                        </b>
+                        <a href="#OnClickFolderModel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>OnClickFolderModel(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="460"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:460</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executado quando clica-se no botão de uma pasta de Modelos</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Index da Pasta</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="OnClickPathImage"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            OnClickPathImage
+                        </b>
+                        <a href="#OnClickPathImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>OnClickPathImage(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="481"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:481</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executado quando clica-se no botão de um caminho de Pasta</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Index do Caminho</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="OnClickPathModel"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            OnClickPathModel
+                        </b>
+                        <a href="#OnClickPathModel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>OnClickPathModel(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="489"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:489</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executado quando clica-se no botão de um caminho de Pasta do Modelo</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Index do Caminho</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="OnClickSelectImage"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            OnClickSelectImage
+                        </b>
+                        <a href="#OnClickSelectImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>OnClickSelectImage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="496"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:496</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executado quando clica-se no botão de selecionar Imagem</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="OnClickSelectModel"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            OnClickSelectModel
+                        </b>
+                        <a href="#OnClickSelectModel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>OnClickSelectModel()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="510"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:510</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executado quando clica-se no botão de selecionar Modelo</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="OnControlsChangeCameraPosition"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            OnControlsChangeCameraPosition
+                        </b>
+                        <a href="#OnControlsChangeCameraPosition"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>OnControlsChangeCameraPosition(render: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="557"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:557</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executado quando ocorre alguma alteração na câmera</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>render</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>true</code>
+                                    </td>
+
+                                    <td>
+                                        <p>Informa se deve renderizar ou não</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="OnControlsLockAndKeyDown"></a>
+                    <span class="name">
+                        <b>
+                            OnControlsLockAndKeyDown
+                        </b>
+                        <a href="#OnControlsLockAndKeyDown"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>OnControlsLockAndKeyDown(event: KeyboardEvent)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="611"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:611</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executado com um botão clicado e o sistema está em modo de navegação. O controle de navegação é tratado nesta função</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                            <code>KeyboardEvent</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Evento do Teclado</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reloadCamera"></a>
+                    <span class="name">
+                        <b>
+                            reloadCamera
+                        </b>
+                        <a href="#reloadCamera"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>reloadCamera(cameraSettings: <a href="../classes/CameraSettings.html">CameraSettings</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="327"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:327</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Recarrega a câmera usando uma condfiguração enviada</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cameraSettings</td>
+                                    <td>
+                                                <code><a href="../classes/CameraSettings.html" target="_self" >CameraSettings</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Configurações da Camera</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="render"></a>
+                    <span class="name">
+                        <b>
+                            render
+                        </b>
+                        <a href="#render"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>render()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="274"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:274</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Informa ao RenderLoop que é necessário atualizar a tela</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="renderLoop"></a>
+                    <span class="name">
+                        <b>
+                            renderLoop
+                        </b>
+                        <a href="#renderLoop"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>renderLoop(now)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="278"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:278</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>now</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetWindows"></a>
+                    <span class="name">
+                        <b>
+                            resetWindows
+                        </b>
+                        <a href="#resetWindows"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resetWindows()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="244"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:244</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Reinicializa a Tela, Reajustando o ViewPort e os controles</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setModel"></a>
+                    <span class="name">
+                        <b>
+                            setModel
+                        </b>
+                        <a href="#setModel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setModel(folder: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, filename: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="367"
+                            class="link-to-prism">src/app/canvas/canvas.component.ts:367</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Carrega um modelo na cena</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>folder</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Pasta do Modelo</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>filename</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Nome do Arquivo do Modelo</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="camera"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            camera</b>
+                            <a href="#camera"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Camera</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/canvas/canvas.component.ts:66</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Câmera padrão do cenário do Three.js</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="canvasComponent"></a>
+                        <span class="name">
+                            <b>
+                            canvasComponent</b>
+                            <a href="#canvasComponent"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;CanvasComponent&#x27;, {static: true})<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/canvas/canvas.component.ts:52</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Elemento do Canvas dentro do DOM</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="canvasHeight"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            canvasHeight</b>
+                            <a href="#canvasHeight"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/app/canvas/canvas.component.ts:96</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Altura do Canvas</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="canvasWidth"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            canvasWidth</b>
+                            <a href="#canvasWidth"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="91" class="link-to-prism">src/app/canvas/canvas.component.ts:91</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Largura do Canvas</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="controls"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            controls</b>
+                            <a href="#controls"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>PointerLockControls</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/app/canvas/canvas.component.ts:71</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Controle de Câmera fornecido no Sistema</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="equirectangularFolderCurrentSelected"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            equirectangularFolderCurrentSelected</b>
+                            <a href="#equirectangularFolderCurrentSelected"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>-1</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="131" class="link-to-prism">src/app/canvas/canvas.component.ts:131</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Pasta de Imagens Selecionada</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="equirectangularImageCurrentSelected"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            equirectangularImageCurrentSelected</b>
+                            <a href="#equirectangularImageCurrentSelected"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>-1</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="136" class="link-to-prism">src/app/canvas/canvas.component.ts:136</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Imagem 360º selecionada</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="equirectangularMesh"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            equirectangularMesh</b>
+                            <a href="#equirectangularMesh"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Mesh&lt;SphereGeometry | MeshBasicMaterial&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="121" class="link-to-prism">src/app/canvas/canvas.component.ts:121</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Malha Esférica que contêm a imagem 360º</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="equirectangularMetadatas"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            equirectangularMetadatas</b>
+                            <a href="#equirectangularMetadatas"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/EquiretangularMetadata.html" target="_self" >EquiretangularMetadata</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new EquiretangularMetadata()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="126" class="link-to-prism">src/app/canvas/canvas.component.ts:126</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Informações das Imagens Equirentagulares hospedadas </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="FAR"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                                <span class="modifier">Readonly</span>
+                            FAR</b>
+                            <a href="#FAR"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>1000</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="86" class="link-to-prism">src/app/canvas/canvas.component.ts:86</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Far padrão da aplicação</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="FOV"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                                <span class="modifier">Readonly</span>
+                            FOV</b>
+                            <a href="#FOV"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>60</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/app/canvas/canvas.component.ts:76</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Field of View Padrão da Aplicação</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fpsCounter"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            fpsCounter</b>
+                            <a href="#fpsCounter"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;0.00&quot;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="111" class="link-to-prism">src/app/canvas/canvas.component.ts:111</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Texto exibido na View, indica o FPS </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fpsTimer"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            fpsTimer</b>
+                            <a href="#fpsTimer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="106" class="link-to-prism">src/app/canvas/canvas.component.ts:106</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Tempo anterior desde o ultimo frame</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasToCallRender"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            hasToCallRender</b>
+                            <a href="#hasToCallRender"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="101" class="link-to-prism">src/app/canvas/canvas.component.ts:101</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Flag que informa se é necessário realizar uma atualização na visualização do cenário</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modelBadgeName"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            modelBadgeName</b>
+                            <a href="#modelBadgeName"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;&quot;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="146" class="link-to-prism">src/app/canvas/canvas.component.ts:146</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Nome da pasta do modelo carregado no cenário</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modelCurrentSelected"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            modelCurrentSelected</b>
+                            <a href="#modelCurrentSelected"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>-1</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="166" class="link-to-prism">src/app/canvas/canvas.component.ts:166</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Modelos selecionado</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modelFileName"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            modelFileName</b>
+                            <a href="#modelFileName"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;Escolher Modelo&quot;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="141" class="link-to-prism">src/app/canvas/canvas.component.ts:141</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Nome do modelo carregado no cenário</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modelMesh"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            modelMesh</b>
+                            <a href="#modelMesh"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Object3D</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="151" class="link-to-prism">src/app/canvas/canvas.component.ts:151</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Malha do Modelo</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modelsFolderCurrentSelected"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            modelsFolderCurrentSelected</b>
+                            <a href="#modelsFolderCurrentSelected"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>-1</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="161" class="link-to-prism">src/app/canvas/canvas.component.ts:161</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Pasta de modelos selecionada</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modelsMetadatas"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            modelsMetadatas</b>
+                            <a href="#modelsMetadatas"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>ModelsMetadata</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new ModelsMetadata()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="156" class="link-to-prism">src/app/canvas/canvas.component.ts:156</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Informações dos modelos hospedados</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="NEAR"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                                <span class="modifier">Readonly</span>
+                            NEAR</b>
+                            <a href="#NEAR"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0.1</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/app/canvas/canvas.component.ts:81</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Near padrão da aplicação</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="scenario"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            scenario</b>
+                            <a href="#scenario"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Scenario.html" target="_self" >Scenario</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="171" class="link-to-prism">src/app/canvas/canvas.component.ts:171</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Informações do Cenário</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="scenarioTreeView"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            scenarioTreeView</b>
+                            <a href="#scenarioTreeView"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/ScenarioTreeView.html" target="_self" >ScenarioTreeView</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="176" class="link-to-prism">src/app/canvas/canvas.component.ts:176</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Visualização em árvore do cenário</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="scene"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            scene</b>
+                            <a href="#scene"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Scene</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/canvas/canvas.component.ts:61</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Cenário do Three.js </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="trianglesCounter"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            trianglesCounter</b>
+                            <a href="#trianglesCounter"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="116" class="link-to-prism">src/app/canvas/canvas.component.ts:116</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Contador de Triângulos Carregados</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="webGLRenderer"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            webGLRenderer</b>
+                            <a href="#webGLRenderer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>WebGLRenderer</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/canvas/canvas.component.ts:57</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Renderizador do WebGL usado no Three.js</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, ElementRef, OnInit, Renderer2, ViewChild, HostListener } from &#x27;@angular/core&#x27;;
+
+//ThreeJs Imports
+import { Camera, PerspectiveCamera, Sphere } from &quot;three&quot;
+import { WebGLRenderer } from &quot;three&quot;
+import { Scene } from &quot;three&quot;
+import { DirectionalLight, AmbientLight } from &quot;three&quot;
+import { Object3D, SphereGeometry, Mesh, BoxGeometry } from &quot;three&quot;
+import { TextureLoader, Texture, MeshBasicMaterial } from &quot;three&quot;
+import { Vector3 } from &quot;three&quot;
+// @ts-ignore
+import { GLTFLoader } from &#x27;three/examples/jsm/loaders/GLTFLoader&#x27;;
+// @ts-ignore
+import { KTX2Loader } from &#x27;three/examples/jsm/loaders/KTX2Loader&#x27;;
+// import { OBJLoader } from &#x27;three/examples/jsm/loaders/OBJLoader&#x27;;
+// @ts-ignore
+import { MeshoptDecoder } from &#x27;three/examples/jsm/libs/meshopt_decoder.module.js&#x27;;
+
+// import { OrbitControls } from &#x27;three/examples/jsm/controls/OrbitControls.js&#x27;;
+import { PointerLockControls } from &#x27;three/examples/jsm/controls/PointerLockControls.js&#x27;;
+
+//Others Imports
+import { EquiretangularMetadata } from &#x27;../models/equirectangular&#x27;;
+import { ModelsMetadata } from &#x27;../models/Objects&#x27;;
+
+import { ScenarioTreeView } from &#x27;../utils/jsTreeContainer&#x27;;
+import { CameraSettings, Scenario } from &#x27;../models/Scenario&#x27;;
+import { ResourcesService } from &#x27;../services/resources.service&#x27;;
+
+@Component({
+  selector: &#x27;app-canvas&#x27;,
+  templateUrl: &#x27;./canvas.component.html&#x27;,
+  styleUrls: [&#x27;./canvas.component.scss&#x27;]
+})
+
+/**
+ * Componente Canvas. Controlador da Tela resposável pela exibição do Canvas
+ */
+export class CanvasComponent implements OnInit {
+
+  /**
+   * Elemento do Canvas dentro do DOM
+   */
+  @ViewChild(&#x27;CanvasComponent&#x27;, { static: true }) canvasComponent!: ElementRef;
+
+  /**
+   * Renderizador do WebGL usado no Three.js
+   */
+  private webGLRenderer: WebGLRenderer;
+
+  /**
+   * Cenário do Three.js */
+  private scene: Scene;
+
+  /**
+   * Câmera padrão do cenário do Three.js
+   */
+  private camera!: Camera;
+
+  /**
+   * Controle de Câmera fornecido no Sistema
+   */
+  private controls!: PointerLockControls;
+
+  /**
+   * Field of View Padrão da Aplicação
+   */
+  public readonly FOV: number &#x3D; 60;
+
+  /**
+   * Near padrão da aplicação
+   */
+  public readonly NEAR: number &#x3D; 0.1;
+
+  /**
+   * Far padrão da aplicação
+   */
+  public readonly FAR: number &#x3D; 1000;
+
+  /**
+   * Largura do Canvas
+   */
+  public canvasWidth!: number;
+
+  /**
+   * Altura do Canvas
+   */
+  public canvasHeight!: number;
+
+  /**
+   * Flag que informa se é necessário realizar uma atualização na visualização do cenário
+   */
+  private hasToCallRender: boolean &#x3D; false;
+
+  /**
+   * Tempo anterior desde o ultimo frame
+   */
+  private fpsTimer: number &#x3D; 0;
+
+  /**
+   *  Texto exibido na View, indica o FPS 
+   */
+  public fpsCounter: string &#x3D; &quot;0.00&quot;;
+
+  /**
+   * Contador de Triângulos Carregados
+   */
+  public trianglesCounter: number &#x3D; 0;
+
+  /**
+   * Malha Esférica que contêm a imagem 360º
+   */
+  private equirectangularMesh!: Mesh&lt;SphereGeometry, MeshBasicMaterial&gt;;
+
+  /**
+   * Informações das Imagens Equirentagulares hospedadas 
+   */
+  public equirectangularMetadatas: EquiretangularMetadata &#x3D; new EquiretangularMetadata();
+
+  /**
+   * Pasta de Imagens Selecionada
+   */
+  public equirectangularFolderCurrentSelected: number &#x3D; -1;
+
+  /**
+   * Imagem 360º selecionada
+   */
+  public equirectangularImageCurrentSelected: number &#x3D; -1;
+
+  /**
+   * Nome do modelo carregado no cenário
+   */
+  public modelFileName: string &#x3D; &quot;Escolher Modelo&quot;;
+
+  /**
+   * Nome da pasta do modelo carregado no cenário
+   */
+  public modelBadgeName: string &#x3D; &quot;&quot;;
+
+  /**
+   * Malha do Modelo
+   */
+  private modelMesh!: Object3D;
+
+  /**
+   * Informações dos modelos hospedados
+   */
+  public modelsMetadatas: ModelsMetadata &#x3D; new ModelsMetadata();
+
+  /**
+   * Pasta de modelos selecionada
+   */
+  public modelsFolderCurrentSelected: number &#x3D; -1;
+
+    /**
+   * Modelos selecionado
+   */
+  public modelCurrentSelected: number &#x3D; -1;
+
+  /**
+   * Informações do Cenário
+   */
+  public scenario: Scenario;
+
+  /**
+   * Visualização em árvore do cenário
+   */
+  public scenarioTreeView!: ScenarioTreeView;
+
+  /**
+   * Construtor do Componente Canvas
+   * @param DOMRenderer (Injenção de Dependência) Renderer do DOM 
+   * @param resources (Injenção de Dependência) Serviço responsável por se comunicar com o servidor 
+   */
+  constructor(private DOMRenderer: Renderer2, private resources: ResourcesService) {
+    //Inicializa o WebGLRenderer
+    this.webGLRenderer &#x3D; new WebGLRenderer();
+    //Inicializa a Cena
+    this.scene &#x3D; new Scene();
+    //Inicializa as Configurações do Cenário
+    this.scenario &#x3D; new Scenario();
+  }
+
+  /**
+   * Executado ao Inicializar os atributos do Componente.
+   */
+  ngOnInit(): void {
+
+    //Requisita a Lista de Imagens Equiretangulares
+    this.resources.getEquirectangularImages().subscribe((result) &#x3D;&gt; {
+      this.equirectangularMetadatas &#x3D; result
+      this.OnClickFolderImage(0);
+    });
+
+    //Requisita os Modelos
+    this.resources.getModels().subscribe((result) &#x3D;&gt; {
+      this.modelsMetadatas &#x3D; result
+      this.OnClickFolderModel(0);
+    });
+
+    setTimeout(() &#x3D;&gt; {
+      //Inicializa o Canvas
+      this.initCanvas()
+
+      //Inicia o Loop de Renderização
+      this.renderLoop(0);
+
+      //Inicia a Arvore de Visualização
+      this.scenarioTreeView &#x3D; new ScenarioTreeView(&quot;#treeVisualization&quot;, this.scenario, () &#x3D;&gt; { this.reloadCamera(this.scenario.getCurrentCameraSettings()!) })
+    }, 200)
+
+  }
+
+  /**
+   * Inicializa o Canvas
+   */
+  initCanvas(): void {
+
+    //Cria a Câmera, Define o Tamanho do Canvas
+    this.resetWindows()
+
+    //Anexa ao DOM
+    this.DOMRenderer.appendChild(this.canvasComponent.nativeElement, this.webGLRenderer.domElement)
+
+    //Anexa o Evento de clique ao Canvas
+    this.webGLRenderer.domElement.addEventListener(&#x27;click&#x27;, () &#x3D;&gt; {
+      this.OnClickCanvas()
+    });
+
+    this.createLights();
+  }
+
+  /**
+   * Reinicializa a Tela, Reajustando o ViewPort e os controles
+   */
+  resetWindows(): void {
+
+    this.canvasWidth &#x3D; this.canvasComponent.nativeElement.offsetWidth;
+    this.canvasHeight &#x3D; this.canvasComponent.nativeElement.offsetHeight;
+
+    const aspect &#x3D; this.canvasWidth / this.canvasHeight;
+
+    //Cria a nova câmera
+    this.camera &#x3D; new PerspectiveCamera(this.FOV, aspect, this.NEAR, this.FAR)
+
+    this.controls &#x3D; new PointerLockControls(this.camera, this.webGLRenderer.domElement);
+
+    // this.controls &#x3D; new OrbitControls(this.camera, this.webGLRenderer.domElement);
+
+    //Eventos do Controle
+    this.controls.addEventListener(&#x27;change&#x27;, (event: any) &#x3D;&gt; {
+      this.OnControlsChangeCameraPosition()
+    });
+
+
+    this.OnChangeCameraPosition(false)
+
+
+    //Altera o Renderer
+    this.webGLRenderer.setSize(this.canvasWidth, this.canvasHeight);
+  }
+
+  /**
+   * Informa ao RenderLoop que é necessário atualizar a tela
+   */
+  render(): void {
+    this.hasToCallRender &#x3D; true;
+  }
+
+  renderLoop(now): void {
+
+    now *&#x3D; 0.001;                          // convert to seconds
+    const deltaTime &#x3D; now - this.fpsTimer;          // compute time since last frame
+    this.fpsTimer &#x3D; now;                            // remember time for next frame
+    this.fpsCounter &#x3D; (1 / deltaTime).toFixed(2);
+
+    if (this.hasToCallRender) {
+      this.hasToCallRender &#x3D; false;
+      this.webGLRenderer.render(this.scene, this.camera);
+      this.trianglesCounter &#x3D; this.webGLRenderer.info.render.triangles;
+    }
+
+    requestAnimationFrame((now) &#x3D;&gt; {
+      this.renderLoop(now);
+    });
+  }
+
+  /**
+   * Cria as Luzes
+   */
+  createLights(): void {
+    const light &#x3D; new DirectionalLight(0xFFFFFF, 1);
+    light.position.set(0, 40, 0);
+    this.scene.add(light)
+
+    const ambient &#x3D; new AmbientLight(0xFFFFFF);
+    this.scene.add(ambient);
+
+    this.render();
+  }
+  /**
+   * Carrega uma nova Configuração de Camera
+   * @param filename Nome do arquivo da Imagem 360 que está no Fundo da Câmera
+   * @param folder Pasta do arquivo da Imagem 360 que está no Fundo da Câmera
+   */
+  addCamera(folder, filename): void {
+
+    //Cria uma nova Configuração
+    this.scenario.addCameraSettings(new CameraSettings(folder, filename, 50, 50, 50))
+    this.scenarioTreeView.addCamera(filename)
+
+    this.reloadCamera(this.scenario.getCurrentCameraSettings()!)
+  }
+
+  /**
+   * Recarrega a câmera usando uma condfiguração enviada
+   * @param cameraSettings Configurações da Camera
+   */
+  reloadCamera(cameraSettings: CameraSettings): void {
+    new TextureLoader()
+      .load(this.resources.getEquirectangularImageURI(cameraSettings.textureFolder, cameraSettings.textureFilename),
+        (texture) &#x3D;&gt; {
+          //Cria o Material com a Textura
+          const material &#x3D; new MeshBasicMaterial({ map: texture });
+
+          //Recupera a Malha da Esfera
+          let sphere &#x3D; this.equirectangularMesh;
+
+          //Caso não tenha sido criado
+          if (!sphere) {
+            //Cria-se a geometria da Esfera
+            const geometry &#x3D; new SphereGeometry(500, 60, 40);
+            geometry.scale(-1, 1, 1);
+            sphere &#x3D; new Mesh(geometry, material);
+
+            //Define-se a posição Inicial
+            sphere.position.set(cameraSettings.positionX, cameraSettings.positionY, cameraSettings.positionZ);
+            //Adiciona a Cena
+            this.scene.add(sphere)
+          }
+          else {
+            sphere.material &#x3D; material
+          }
+
+          this.equirectangularMesh &#x3D; sphere;
+
+          this.OnChangeCameraPosition(false)
+          this.OnChangeEquirectangularImageRotation(false)
+          this.render()
+        });
+
+  }
+
+  /**
+   * Carrega um modelo na cena
+   * @param folder Pasta do Modelo
+   * @param filename Nome do Arquivo do Modelo
+   */
+  setModel(folder: string, filename: string) {
+    let cameraSettings &#x3D; this.scenario.getCurrentCameraSettings()!;
+
+    if (cameraSettings) {
+      //Incializa o Carregador o KTX2Loader (Textura)
+      const ktx2Loader &#x3D; new KTX2Loader()
+        .setTranscoderPath(&#x27;../custom/basis/&#x27;)
+        .detectSupport(this.webGLRenderer);
+
+      //Inicaliza o Carregador do GLTF (Modelo)
+      const gltfLoader &#x3D; new GLTFLoader();
+      gltfLoader.setKTX2Loader(ktx2Loader);
+      gltfLoader.setMeshoptDecoder(MeshoptDecoder);
+
+      //Carrega o Modelo Selecionado
+      gltfLoader.load(this.resources.getModelURI(folder, filename), (gltf) &#x3D;&gt; {
+
+        console.log(&quot;Objeto Carregado!&quot;);
+        //Recupera a geometria
+        const root &#x3D; gltf.scene;
+
+        //Se já possui um modelo carregado então substitui
+        if (this.modelMesh) {
+          this.scene.remove(this.modelMesh);
+        }
+
+        this.modelMesh &#x3D; root;
+
+        //Adiciona na cena
+        this.scene.add(this.modelMesh);
+
+        //Altera o objeto na cena
+        this.modelMesh.position.set(0, 0, 0);
+        this.modelMesh.lookAt(new Vector3(0, 9999999999999, 0))
+
+        //Atualiza as variaveis no DOM
+        this.modelFileName &#x3D; filename
+        this.modelBadgeName &#x3D; folder
+
+        //Atualiza os Controles
+        // const sceneBB &#x3D; new Box3().setFromObject(this.modelMesh);
+        // sceneBB.getCenter(this.controls.target);
+
+        // //Pega uma das pontas da BoundingBox
+        // const corner &#x3D; new Vector3().copy(sceneBB.max);
+        // const dir &#x3D; corner;
+        // dir.sub(this.controls.target);
+        // dir.normalize();
+        // var boundingSphere &#x3D; new Sphere();
+        // sceneBB.getBoundingSphere(boundingSphere);
+        // const distance &#x3D; Math.abs(boundingSphere.radius / Math.sin(this.FOV / 2)) * 1.1;
+        // corner.add(dir.multiplyScalar(distance));
+
+        // cameraSettings.positionX &#x3D; corner.x;
+        // cameraSettings.positionY &#x3D; corner.y;
+        // cameraSettings.positionZ &#x3D; corner.z;
+
+        // this.OnChangeCameraPosition()
+
+        //Renderiza
+        this.render()
+
+      });
+    }
+
+
+  }
+
+  /**
+   * Executado quando clica-se no botão de uma pasta
+   * @param index Index da Pasta
+   */
+  public OnClickFolderImage(index: number): void {
+    //Caso tenha alguem na Imagem
+    if (this.equirectangularMetadatas.folders.length &gt; 0) {
+      //Caso sejam iguais
+      if (this.equirectangularFolderCurrentSelected &#x3D;&#x3D; index)
+        return;
+
+      this.equirectangularFolderCurrentSelected &#x3D; index;
+    }
+    //Caso contrário
+    else
+      this.equirectangularFolderCurrentSelected &#x3D; -1
+
+    this.equirectangularImageCurrentSelected &#x3D; -1;
+
+  }
+
+  /**
+   * Executado quando clica-se no botão de uma pasta de Modelos
+   * @param index Index da Pasta
+   */
+  public OnClickFolderModel(index: number): void {
+    //Caso tenha alguem na Imagem
+    if (this.modelsMetadatas.folders.length &gt; 0) {
+      //Caso sejam iguais
+      if (this.modelsFolderCurrentSelected &#x3D;&#x3D; index)
+        return;
+
+      this.modelsFolderCurrentSelected &#x3D; index;
+    }
+    //Caso contrário
+    else
+      this.modelsFolderCurrentSelected &#x3D; -1
+
+    this.modelCurrentSelected &#x3D; -1;
+
+  }
+
+  /**
+   * Executado quando clica-se no botão de um caminho de Pasta
+   * @param index Index do Caminho
+   */
+  public OnClickPathImage(index: number): void {
+    this.equirectangularImageCurrentSelected &#x3D; index;
+  }
+
+  /**
+ * Executado quando clica-se no botão de um caminho de Pasta do Modelo
+ * @param index Index do Caminho
+ */
+  public OnClickPathModel(index: number): void {
+    this.modelCurrentSelected &#x3D; index;
+  }
+
+  /**
+   * Executado quando clica-se no botão de selecionar Imagem
+   */
+  public OnClickSelectImage(): void {
+
+    if (this.equirectangularFolderCurrentSelected &#x3D;&#x3D; -1 || this.equirectangularImageCurrentSelected &#x3D;&#x3D; -1)
+      return;
+
+    let folder &#x3D; this.equirectangularMetadatas.folders[this.equirectangularFolderCurrentSelected].label
+    let filename &#x3D; this.equirectangularMetadatas.folders[this.equirectangularFolderCurrentSelected].files[this.equirectangularImageCurrentSelected]
+
+    this.addCamera(folder, filename)
+  }
+
+  /**
+   * Executado quando clica-se no botão de selecionar Modelo
+   */
+  public OnClickSelectModel(): void {
+
+    if (this.modelsFolderCurrentSelected &#x3D;&#x3D; -1 || this.modelCurrentSelected &#x3D;&#x3D; -1)
+      return;
+
+    let folder &#x3D; this.modelsMetadatas.folders[this.modelsFolderCurrentSelected].label
+    let filename &#x3D; this.modelsMetadatas.folders[this.modelsFolderCurrentSelected].files[this.modelCurrentSelected].file
+
+    this.setModel(folder, filename)
+  }
+
+  /**
+   * Executado quando ocorre alguma alteração na câmera
+   * @param render Informa se deve renderizar ou não
+   */
+  public OnChangeCameraPosition(render: boolean &#x3D; true): void {
+
+    let cameraSettings &#x3D; this.scenario.getCurrentCameraSettings()
+
+    if (cameraSettings) {
+
+      this.camera.position.x &#x3D; cameraSettings.positionX
+      this.camera.position.y &#x3D; cameraSettings.positionY
+      this.camera.position.z &#x3D; cameraSettings.positionZ
+
+      // this.camera.lookAt(0, 0, 0);
+
+      //Atualiza o Background se estiver instanciado
+      if (this.equirectangularMesh) {
+        this.equirectangularMesh.position.x &#x3D; cameraSettings.positionX
+        this.equirectangularMesh.position.y &#x3D; cameraSettings.positionY
+        this.equirectangularMesh.position.z &#x3D; cameraSettings.positionZ
+      }
+
+      // this.controls.update();
+
+      //Se câmera já está instanciada
+      if (render)
+        this.render();
+
+    }
+
+  }
+  /**
+   * Executado quando ocorre alguma alteração na câmera
+   * @param render Informa se deve renderizar ou não
+   */
+  public OnControlsChangeCameraPosition(render: boolean &#x3D; true): void {
+
+    let cameraSettings &#x3D; this.scenario.getCurrentCameraSettings();
+
+    if (cameraSettings) {
+
+      cameraSettings.positionX &#x3D; this.camera.position.x;
+      cameraSettings.positionY &#x3D; this.camera.position.y;
+      cameraSettings.positionZ &#x3D; this.camera.position.z;
+
+      //Atualiza o Background se estiver instanciado
+      if (this.equirectangularMesh) {
+        this.equirectangularMesh.position.x &#x3D; cameraSettings.positionX
+        this.equirectangularMesh.position.y &#x3D; cameraSettings.positionY
+        this.equirectangularMesh.position.z &#x3D; cameraSettings.positionZ
+      }
+
+      //Se câmera já está instanciada
+      if (render)
+        this.render();
+
+    }
+
+
+  }
+
+  /**
+   * Executado ao mudar o slider da rotação da Imagem Equiretangular.
+   * @param render Informa se deve renderizar ou não
+   */
+  public OnChangeEquirectangularImageRotation(render: boolean &#x3D; true): void {
+
+    let cameraSettings &#x3D; this.scenario.getCurrentCameraSettings();
+
+    if (cameraSettings) {
+
+      if (!this.equirectangularMesh) {
+        console.warn(&quot;Imagem Equiretangular não está instaciada&quot;);
+        return;
+      }
+
+      this.equirectangularMesh.rotation.y &#x3D; cameraSettings.rotationY * Math.PI / 180
+
+      if (render)
+        this.render();
+
+    }
+
+  }
+
+  /**
+   * Executado com um botão clicado e o sistema está em modo de navegação. O controle de navegação é tratado nesta função
+   * @param event Evento do Teclado
+   */
+  OnControlsLockAndKeyDown(event: KeyboardEvent) {
+
+    if (!(this.controls &amp;&amp; this.controls instanceof PointerLockControls &amp;&amp; this.controls.isLocked &#x3D;&#x3D;&#x3D; true)) return;
+    let velocity &#x3D; new Vector3();
+
+    let moveForward &#x3D; false;
+    let moveLeft &#x3D; false;
+    let moveBackward &#x3D; false;
+    let moveRight &#x3D; false;
+    let moveUp &#x3D; false
+    let moveDown &#x3D; false
+
+    switch (event.code) {
+      case &#x27;ArrowUp&#x27;:
+      case &#x27;KeyW&#x27;:
+        moveForward &#x3D; true;
+        break;
+      case &#x27;ArrowLeft&#x27;:
+      case &#x27;KeyA&#x27;:
+        moveLeft &#x3D; true;
+        break;
+      case &#x27;ArrowDown&#x27;:
+      case &#x27;KeyS&#x27;:
+        moveBackward &#x3D; true;
+        break;
+      case &#x27;ArrowRight&#x27;:
+      case &#x27;KeyD&#x27;:
+        moveRight &#x3D; true;
+        break;
+      case &#x27;Space&#x27;:
+      case &#x27;KeyE&#x27;:
+        moveUp &#x3D; true;
+        break;
+      case &#x27;ShiftLeft&#x27;:
+      case &#x27;KeyQ&#x27;:
+        moveDown &#x3D; true;
+        break;
+    }
+
+    let z &#x3D; Number(moveForward) - Number(moveBackward);
+    let x &#x3D; Number(moveRight) - Number(moveLeft);
+    let y &#x3D; Number(moveUp) - Number(moveDown);
+
+    if (moveForward || moveBackward) velocity.z -&#x3D; z * 0.5
+    if (moveLeft || moveRight) velocity.x -&#x3D; x * 0.5
+    if (moveUp || moveDown) velocity.y -&#x3D; y * 0.5
+
+    this.controls.moveRight(-velocity.x);
+    this.controls.moveForward(-velocity.z);
+    this.controls.getObject().position.y +&#x3D; (-velocity.y);
+
+    this.OnControlsChangeCameraPosition()
+  }
+
+  /**
+   * Executado ao Clicar no Canvas
+   */
+  OnClickCanvas() {
+    //Se o controle existe e é do Tipo PointerLockControls
+    if (this.controls &amp;&amp; this.controls instanceof PointerLockControls) {
+      this.controls.lock();
+    }
+  }
+
+  /**
+   * Executado quando uma tecla é usada
+   * @param event Evento do Teclado
+   */
+  @HostListener(&#x27;window:keydown&#x27;, [&#x27;$event&#x27;])
+  OnKeyDown(event: KeyboardEvent) {
+    this.OnControlsLockAndKeyDown(event)
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;fill canvasArea&quot;&gt;
+    &lt;div class&#x3D;&quot;settingsContainer&quot;&gt;
+        &lt;!-- As a heading --&gt;
+        &lt;nav class&#x3D;&quot;navbar navbar-light bg-light&quot;&gt;
+            &lt;div class&#x3D;&quot;container-fluid&quot;&gt;
+                &lt;span class&#x3D;&quot;navbar-brand mb-0 h1&quot;&gt;Visualização&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+
+        &lt;div class&#x3D;&quot;accordion&quot; id&#x3D;&quot;accordionChooser&quot;&gt;
+            &lt;div class&#x3D;&quot;accordion-item&quot;&gt;
+                &lt;h2 class&#x3D;&quot;accordion-header&quot; id&#x3D;&quot;headerImageChooser&quot;&gt;
+                    &lt;button class&#x3D;&quot;accordion-button collapsed&quot; type&#x3D;&quot;button&quot; data-bs-toggle&#x3D;&quot;collapse&quot;
+                        data-bs-target&#x3D;&quot;#collapseImageChooser&quot; aria-expanded&#x3D;&quot;false&quot;
+                        aria-controls&#x3D;&quot;collapseImageChooser&quot;&gt;
+                        &lt;span&gt;Adicionar Câmera&lt;/span&gt;
+                    &lt;/button&gt;
+                &lt;/h2&gt;
+                &lt;div id&#x3D;&quot;collapseImageChooser&quot; class&#x3D;&quot;accordion-collapse collapse&quot; aria-labelledby&#x3D;&quot;headerImageChooser&quot;
+                    data-bs-parent&#x3D;&quot;#accordionChooser&quot;&gt;
+                    &lt;div class&#x3D;&quot;card&quot;&gt;
+                        &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                            &lt;div class&#x3D;&quot;fill&quot; style&#x3D;&quot;display: flex;&quot;&gt;
+                                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary btn-block&quot; data-bs-toggle&#x3D;&quot;modal&quot;
+                                    data-bs-target&#x3D;&quot;#modalSelectImage&quot; style&#x3D;&quot;flex: 1;&quot;&gt;
+                                    Escolher nova Imagem
+                                &lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;accordion-item&quot;&gt;
+                &lt;h2 class&#x3D;&quot;accordion-header&quot; id&#x3D;&quot;headerModelChooser&quot;&gt;
+                    &lt;button class&#x3D;&quot;accordion-button collapsed&quot; type&#x3D;&quot;button&quot; data-bs-toggle&#x3D;&quot;collapse&quot;
+                        data-bs-target&#x3D;&quot;#collapseModelChooser&quot; aria-expanded&#x3D;&quot;false&quot;
+                        aria-controls&#x3D;&quot;collapseModelChooser&quot;&gt;
+                        &lt;span&gt;&lt;span class&#x3D;&quot;badge bg-primary&quot;&gt;{{modelBadgeName}}&lt;/span&gt;
+                            {{modelFileName}}&lt;/span&gt;
+                    &lt;/button&gt;
+                &lt;/h2&gt;
+                &lt;div id&#x3D;&quot;collapseModelChooser&quot; class&#x3D;&quot;accordion-collapse collapse&quot; aria-labelledby&#x3D;&quot;headerModelChooser&quot;
+                    data-bs-parent&#x3D;&quot;#accordionChooser&quot;&gt;
+                    &lt;div class&#x3D;&quot;card&quot;&gt;
+                        &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                            &lt;div class&#x3D;&quot;fill&quot; style&#x3D;&quot;display: flex;&quot;&gt;
+                                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary btn-block&quot; data-bs-toggle&#x3D;&quot;modal&quot;
+                                    data-bs-target&#x3D;&quot;#modalSelectModel&quot; style&#x3D;&quot;flex: 1;&quot;&gt;
+                                    Escolher novo modelo
+                                &lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;hr&gt;
+
+
+        &lt;div id&#x3D;&quot;treeVisualization&quot;&gt;
+
+        &lt;/div&gt;
+        &lt;hr&gt;
+    &lt;/div&gt;
+    &lt;div #CanvasComponent class&#x3D;&quot;canvasContainer&quot;&gt;
+        &lt;div class&#x3D;&quot;modal fade modal-inside&quot; id&#x3D;&quot;modalSelectImage&quot; data-bs-backdrop&#x3D;&quot;static&quot; data-bs-keyboard&#x3D;&quot;false&quot;
+            tabindex&#x3D;&quot;-1&quot; aria-labelledby&#x3D;&quot;modalSelectImageLabel&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+            &lt;div class&#x3D;&quot;modal-dialog modal-fullscreen&quot;&gt;
+                &lt;div class&#x3D;&quot;modal-content&quot;&gt;
+                    &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+                        &lt;h5 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;modalSelectImageLabel&quot;&gt;Escolher Imagem 360º&lt;/h5&gt;
+                        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn-close&quot; data-bs-dismiss&#x3D;&quot;modal&quot; aria-label&#x3D;&quot;Close&quot;&gt;&lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+                        &lt;div class&#x3D;&quot;selection-container&quot;&gt;
+                            &lt;div class&#x3D;&quot;selection-folder&quot;&gt;
+                                &lt;div class&#x3D;&quot;card&quot;&gt;
+                                    &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                                        &lt;h5 class&#x3D;&quot;card-title&quot;&gt;Pastas&lt;/h5&gt;
+                                        &lt;div class&#x3D;&quot;list-group&quot;&gt;
+                                            &lt;button class&#x3D;&quot;list-group-item list-group-item-action&quot;
+                                                *ngFor&#x3D;&quot;let folder of equirectangularMetadatas.folders; let i &#x3D; index&quot;
+                                                [class.active]&#x3D;&quot;i &#x3D;&#x3D;&#x3D; equirectangularFolderCurrentSelected&quot;
+                                                (click)&#x3D;&quot;OnClickFolderImage(i)&quot;&gt;
+                                                {{folder.label}}
+                                            &lt;/button&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;selection-file&quot;&gt;
+                                &lt;div class&#x3D;&quot;card&quot;&gt;
+                                    &lt;div class&#x3D;&quot;card-body&quot; style&#x3D;&quot;flex:1; overflow-y: scroll;&quot;&gt;
+                                        &lt;h5 class&#x3D;&quot;card-title&quot;&gt;Imagens&lt;/h5&gt;
+                                        &lt;div class&#x3D;&quot;list-group&quot; *ngIf&#x3D;&quot;equirectangularFolderCurrentSelected &gt;&#x3D; 0&quot;&gt;
+                                            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;list-group-item list-group-item-action&quot;
+                                                *ngFor&#x3D;&quot;let file of equirectangularMetadatas.folders[equirectangularFolderCurrentSelected].files; let i &#x3D; index&quot;
+                                                [class.active]&#x3D;&quot;i &#x3D;&#x3D;&#x3D; equirectangularImageCurrentSelected&quot;
+                                                (click)&#x3D;&quot;OnClickPathImage(i)&quot;&gt;
+                                                {{file}}
+                                            &lt;/button&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class&#x3D;&quot;card-loading-message&quot;&gt;
+                                        &lt;div class&#x3D;&quot;card-loading-text&quot;&gt;Selecione uma imagem&lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;!-- &lt;img src&#x3D;&quot;...&quot; class&#x3D;&quot;card-img-bottom&quot; alt&#x3D;&quot;...&quot;&gt; --&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+                        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot; data-bs-dismiss&#x3D;&quot;modal&quot;
+                            (click)&#x3D;&quot;OnClickSelectImage()&quot;&gt;Selecionar Imagem&lt;/button&gt;
+                        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary&quot; data-bs-dismiss&#x3D;&quot;modal&quot;&gt;Cancelar&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;modal fade modal-inside&quot; id&#x3D;&quot;modalSelectModel&quot; data-bs-backdrop&#x3D;&quot;static&quot; data-bs-keyboard&#x3D;&quot;false&quot;
+            tabindex&#x3D;&quot;-1&quot; aria-labelledby&#x3D;&quot;modalSelectModelLabel&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+            &lt;div class&#x3D;&quot;modal-dialog modal-fullscreen&quot;&gt;
+                &lt;div class&#x3D;&quot;modal-content&quot;&gt;
+                    &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+                        &lt;h5 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;modalSelectModelLabel&quot;&gt;Escolher Modelo&lt;/h5&gt;
+                        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn-close&quot; data-bs-dismiss&#x3D;&quot;modal&quot; aria-label&#x3D;&quot;Close&quot;&gt;&lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+                        &lt;div class&#x3D;&quot;selection-container&quot;&gt;
+                            &lt;div class&#x3D;&quot;selection-folder&quot;&gt;
+                                &lt;div class&#x3D;&quot;card&quot;&gt;
+                                    &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                                        &lt;h5 class&#x3D;&quot;card-title&quot;&gt;Pastas&lt;/h5&gt;
+                                        &lt;div class&#x3D;&quot;list-group&quot;&gt;
+                                            &lt;button class&#x3D;&quot;list-group-item list-group-item-action&quot;
+                                                *ngFor&#x3D;&quot;let folder of modelsMetadatas.folders; let i &#x3D; index&quot;
+                                                [class.active]&#x3D;&quot;i &#x3D;&#x3D;&#x3D; modelsFolderCurrentSelected&quot;
+                                                (click)&#x3D;&quot;OnClickFolderModel(i)&quot;&gt;
+                                                {{folder.label}}
+                                            &lt;/button&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;selection-file&quot;&gt;
+                                &lt;div class&#x3D;&quot;card&quot;&gt;
+                                    &lt;div class&#x3D;&quot;card-body&quot; style&#x3D;&quot;flex:1; overflow-y: scroll;&quot;&gt;
+                                        &lt;h5 class&#x3D;&quot;card-title&quot;&gt;Modelos&lt;/h5&gt;
+                                        &lt;ul class&#x3D;&quot;list-group&quot; *ngIf&#x3D;&quot;modelsFolderCurrentSelected &gt;&#x3D; 0&quot;&gt;
+                                            &lt;li class&#x3D;&quot;list-group-item list-group-item-action d-flex justify-content-between align-items-start&quot;
+                                                *ngFor&#x3D;&quot;let file of modelsMetadatas.folders[modelsFolderCurrentSelected].files; let i &#x3D; index&quot;
+                                                style&#x3D;&quot;cursor: pointer;&quot; [class.active]&#x3D;&quot;i &#x3D;&#x3D;&#x3D; modelCurrentSelected&quot;
+                                                (click)&#x3D;&quot;OnClickPathModel(i)&quot;&gt;
+                                                &lt;div class&#x3D;&quot;ms-2 me-auto&quot;&gt;
+                                                    {{file.file}}
+                                                &lt;/div&gt;
+                                                &lt;span class&#x3D;&quot;badge bg-primary rounded-pill&quot;&gt;{{file.size}}MB&lt;/span&gt;
+                                            &lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                    &lt;!-- &lt;img src&#x3D;&quot;...&quot; class&#x3D;&quot;card-img-bottom&quot; alt&#x3D;&quot;...&quot;&gt; --&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+                        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot; data-bs-dismiss&#x3D;&quot;modal&quot;
+                            (click)&#x3D;&quot;OnClickSelectModel()&quot;&gt;Selecionar Modelo&lt;/button&gt;
+                        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary&quot; data-bs-dismiss&#x3D;&quot;modal&quot;&gt;Cancelar&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;settingsContainer&quot;&gt;
+        &lt;!-- As a heading --&gt;
+        &lt;nav class&#x3D;&quot;navbar navbar-light bg-light&quot;&gt;
+            &lt;div class&#x3D;&quot;container-fluid&quot;&gt;
+                &lt;span class&#x3D;&quot;navbar-brand mb-0 h1&quot;&gt;Configurações&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+
+        &lt;div class&#x3D;&quot;accordion&quot; id&#x3D;&quot;accordionSettings&quot; *ngIf&#x3D;&quot;scenario.getCurrentCameraSettings()&quot;&gt;
+            &lt;div class&#x3D;&quot;accordion-item&quot;&gt;
+                &lt;h2 class&#x3D;&quot;accordion-header&quot; id&#x3D;&quot;headerCameraSettings&quot;&gt;
+                    &lt;button class&#x3D;&quot;accordion-button collapsed&quot; type&#x3D;&quot;button&quot; data-bs-toggle&#x3D;&quot;collapse&quot;
+                        data-bs-target&#x3D;&quot;#collapseCameraSettings&quot; aria-expanded&#x3D;&quot;false&quot;
+                        aria-controls&#x3D;&quot;collapseCameraSettings&quot;&gt;
+                        Configurações da Câmera Atual
+                    &lt;/button&gt;
+                &lt;/h2&gt;
+                &lt;div id&#x3D;&quot;collapseCameraSettings&quot; class&#x3D;&quot;accordion-collapse collapse&quot;
+                    aria-labelledby&#x3D;&quot;headerCameraSettings&quot; data-bs-parent&#x3D;&quot;#accordionSettings&quot;&gt;
+                    &lt;div class&#x3D;&quot;card&quot;&gt;
+                        &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                            &lt;h6 class&#x3D;&quot;card-subtitle mb-2 text-muted&quot;&gt;Posição da Câmera&lt;/h6&gt;
+                            &lt;div style&#x3D;&quot;display: flex; flex-direction: row;&quot;&gt;
+                                &lt;div class&#x3D;&quot;form-floating m-1&quot;&gt;
+                                    &lt;input type&#x3D;&quot;number&quot; class&#x3D;&quot;form-control form-control-sm&quot; id&#x3D;&quot;numCameraX&quot;
+                                        placeholder&#x3D;&quot;0&quot; step&#x3D;&quot;.5&quot; [(ngModel)]&#x3D;&quot;scenario.getCurrentCameraSettings()!.positionX&quot;
+                                        (ngModelChange)&#x3D;&quot;OnChangeCameraPosition()&quot;&gt;
+                                    &lt;label for&#x3D;&quot;numCameraX&quot;&gt;X&lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;div class&#x3D;&quot;form-floating m-1&quot;&gt;
+                                    &lt;input type&#x3D;&quot;number&quot; class&#x3D;&quot;form-control form-control-sm&quot; id&#x3D;&quot;numCameraY&quot;
+                                        placeholder&#x3D;&quot;0&quot; step&#x3D;&quot;.5&quot; [(ngModel)]&#x3D;&quot;scenario.getCurrentCameraSettings()!.positionY&quot;
+                                        (ngModelChange)&#x3D;&quot;OnChangeCameraPosition()&quot;&gt;
+                                    &lt;label for&#x3D;&quot;numCameraY&quot;&gt;Y&lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;div class&#x3D;&quot;form-floating m-1&quot;&gt;
+                                    &lt;input type&#x3D;&quot;number&quot; class&#x3D;&quot;form-control form-control-sm&quot; id&#x3D;&quot;numCameraZ&quot;
+                                        placeholder&#x3D;&quot;0&quot; step&#x3D;&quot;.5&quot; [(ngModel)]&#x3D;&quot;scenario.getCurrentCameraSettings()!.positionZ&quot;
+                                        (ngModelChange)&#x3D;&quot;OnChangeCameraPosition()&quot;&gt;
+                                    &lt;label for&#x3D;&quot;numCameraZ&quot;&gt;Z&lt;/label&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;h6 class&#x3D;&quot;card-subtitle  mt-2 mb-2 text-muted&quot;&gt;Rotação da Imagem&lt;/h6&gt;
+                            &lt;label for&#x3D;&quot;sliderEquirectangularRotationY&quot; class&#x3D;&quot;form-label&quot;&gt;Rotação em Y
+                                ({{scenario.getCurrentCameraSettings()!.rotationY}}°)&lt;/label&gt;
+                            &lt;input type&#x3D;&quot;range&quot; class&#x3D;&quot;form-range&quot; min&#x3D;&quot;0&quot; max&#x3D;&quot;360&quot; id&#x3D;&quot;sliderEquirectangularRotationY&quot;
+                                [(ngModel)]&#x3D;&quot;scenario.getCurrentCameraSettings()!.rotationY&quot;
+                                (ngModelChange)&#x3D;&quot;OnChangeEquirectangularImageRotation()&quot;&gt;
+                            &lt;h6 class&#x3D;&quot;card-subtitle mt-2 mb-2 text-muted&quot;&gt;Aspectos&lt;/h6&gt;
+                            &lt;div style&#x3D;&quot;display: flex; flex-direction: row;&quot;&gt;
+                                &lt;div class&#x3D;&quot;form-floating m-1&quot;&gt;
+                                    &lt;input type&#x3D;&quot;number&quot; class&#x3D;&quot;form-control form-control-sm&quot; id&#x3D;&quot;numFOV&quot;
+                                        placeholder&#x3D;&quot;0&quot; step&#x3D;&quot;.1&quot; [value]&#x3D;&quot;FOV&quot; disabled&gt;
+                                    &lt;label for&#x3D;&quot;numFOV&quot;&gt;FOV&lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;div class&#x3D;&quot;form-floating m-1&quot;&gt;
+                                    &lt;input type&#x3D;&quot;number&quot; class&#x3D;&quot;form-control form-control-sm&quot; id&#x3D;&quot;numNear&quot;
+                                        placeholder&#x3D;&quot;0&quot; step&#x3D;&quot;.1&quot; [value]&#x3D;&quot;NEAR&quot; disabled&gt;
+                                    &lt;label for&#x3D;&quot;numNear&quot;&gt;Near&lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;div class&#x3D;&quot;form-floating m-1&quot;&gt;
+                                    &lt;input type&#x3D;&quot;number&quot; class&#x3D;&quot;form-control form-control-sm&quot; id&#x3D;&quot;numFar&quot;
+                                        placeholder&#x3D;&quot;0&quot; step&#x3D;&quot;.1&quot; [value]&#x3D;&quot;FAR&quot; disabled&gt;
+                                    &lt;label for&#x3D;&quot;numFar&quot;&gt;Far&lt;/label&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div style&#x3D;&quot;display: flex; flex-direction: row;&quot;&gt;
+                                &lt;div class&#x3D;&quot;form-floating m-1&quot; style&#x3D;&quot;flex: 1;&quot;&gt;
+                                    &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control form-control-sm&quot; id&#x3D;&quot;textDimensions&quot;
+                                        placeholder&#x3D;&quot;0&quot; [value]&#x3D;&quot;(canvasWidth + &#x27;x&#x27; + canvasHeight)&quot; disabled&gt;
+                                    &lt;label for&#x3D;&quot;textDimensions&quot;&gt;Dimensões&lt;/label&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;!-- &lt;h6 class&#x3D;&quot;card-subtitle mt-2 mb-2 text-muted&quot;&gt;Look At&lt;/h6&gt;
+                            &lt;div style&#x3D;&quot;display: flex; flex-direction: row;&quot;&gt;
+                                &lt;div class&#x3D;&quot;form-floating m-1&quot;&gt;
+                                    &lt;input type&#x3D;&quot;number&quot; class&#x3D;&quot;form-control form-control-sm&quot; id&#x3D;&quot;lookAtCameraX&quot;
+                                        placeholder&#x3D;&quot;0&quot; step&#x3D;&quot;.5&quot; [(ngModel)]&#x3D;&quot;cameraLookAt.x&quot; disabled&gt;
+                                    &lt;label for&#x3D;&quot;lookAtCameraX&quot;&gt;X&lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;div class&#x3D;&quot;form-floating m-1&quot;&gt;
+                                    &lt;input type&#x3D;&quot;number&quot; class&#x3D;&quot;form-control form-control-sm&quot; id&#x3D;&quot;lookAtCameraY&quot;
+                                        placeholder&#x3D;&quot;0&quot; step&#x3D;&quot;.5&quot; [(ngModel)]&#x3D;&quot;cameraLookAt.y&quot; disabled&gt;
+                                    &lt;label for&#x3D;&quot;lookAtCameraY&quot;&gt;Y&lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;div class&#x3D;&quot;form-floating m-1&quot;&gt;
+                                    &lt;input type&#x3D;&quot;number&quot; class&#x3D;&quot;form-control form-control-sm&quot; id&#x3D;&quot;lookAtCameraZ&quot;
+                                        placeholder&#x3D;&quot;0&quot; step&#x3D;&quot;.5&quot; [(ngModel)]&#x3D;&quot;cameraLookAt.z&quot; disabled&gt;
+                                    &lt;label for&#x3D;&quot;lookAtCameraZ&quot;&gt;Z&lt;/label&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt; --&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;hr *ngIf&#x3D;&quot;scenario.getCurrentCameraSettings()&quot;&gt;
+        &lt;div class&#x3D;&quot;card&quot;&gt;
+            &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                &lt;h5 class&#x3D;&quot;card-title&quot;&gt;Estatísticas&lt;/h5&gt;
+                &lt;h6 class&#x3D;&quot;card-subtitle mb-2 text-muted&quot;&gt;Informações da Cena&lt;/h6&gt;
+                &lt;p class&#x3D;&quot;card-text mb-0&quot;&gt;FPS: {{fpsCounter}}&lt;/p&gt;
+                &lt;p class&#x3D;&quot;card-text&quot;&gt;Triângulos: {{trianglesCounter}}&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./canvas.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.canvasArea{
+    display: flex;
+}
+
+.canvasContainer{
+    flex: 1
+}
+
+.settingsContainer{
+    width: 300px;    
+}
+
+.statsContainer{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modal-inside {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+    padding-left: 300px;
+    width: auto;
+    height: auto;
+}
+
+.modal-inside &gt; .modal-fullscreen{
+    width: auto;
+}
+
+.canvas-front{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+    margin-left: 0;
+}
+
+.selection-container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.selection-folder{
+    display: flex;
+    flex-direction: column;
+}
+
+.selection-folder &gt; .card{
+   flex: 1;
+   width: 300px;
+   margin-right: 5px;
+}
+
+.selection-file{
+    width: 100%;
+}
+.selection-file &gt; .card{
+    height: 100%;
+}
+
+.card-loading-message{
+    height: 200px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+.card-loading-text{
+    margin: auto;
+}
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="fill canvasArea">    <div class="settingsContainer">        <!-- As a heading -->        <nav class="navbar navbar-light bg-light">            <div class="container-fluid">                <span class="navbar-brand mb-0 h1">Visualização</span>            </div>        </nav>        <div class="accordion" id="accordionChooser">            <div class="accordion-item">                <h2 class="accordion-header" id="headerImageChooser">                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"                        data-bs-target="#collapseImageChooser" aria-expanded="false"                        aria-controls="collapseImageChooser">                        <span>Adicionar Câmera</span>                    </button>                </h2>                <div id="collapseImageChooser" class="accordion-collapse collapse" aria-labelledby="headerImageChooser"                    data-bs-parent="#accordionChooser">                    <div class="card">                        <div class="card-body">                            <div class="fill" style="display: flex;">                                <button type="button" class="btn btn-primary btn-block" data-bs-toggle="modal"                                    data-bs-target="#modalSelectImage" style="flex: 1;">                                    Escolher nova Imagem                                </button>                            </div>                        </div>                    </div>                </div>            </div>            <div class="accordion-item">                <h2 class="accordion-header" id="headerModelChooser">                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"                        data-bs-target="#collapseModelChooser" aria-expanded="false"                        aria-controls="collapseModelChooser">                        <span><span class="badge bg-primary">{{modelBadgeName}}</span>                            {{modelFileName}}</span>                    </button>                </h2>                <div id="collapseModelChooser" class="accordion-collapse collapse" aria-labelledby="headerModelChooser"                    data-bs-parent="#accordionChooser">                    <div class="card">                        <div class="card-body">                            <div class="fill" style="display: flex;">                                <button type="button" class="btn btn-primary btn-block" data-bs-toggle="modal"                                    data-bs-target="#modalSelectModel" style="flex: 1;">                                    Escolher novo modelo                                </button>                            </div>                        </div>                    </div>                </div>            </div>        </div>        <hr>        <div id="treeVisualization">        </div>        <hr>    </div>    <div #CanvasComponent class="canvasContainer">        <div class="modal fade modal-inside" id="modalSelectImage" data-bs-backdrop="static" data-bs-keyboard="false"            tabindex="-1" aria-labelledby="modalSelectImageLabel" aria-hidden="true">            <div class="modal-dialog modal-fullscreen">                <div class="modal-content">                    <div class="modal-header">                        <h5 class="modal-title" id="modalSelectImageLabel">Escolher Imagem 360º</h5>                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                    </div>                    <div class="modal-body">                        <div class="selection-container">                            <div class="selection-folder">                                <div class="card">                                    <div class="card-body">                                        <h5 class="card-title">Pastas</h5>                                        <div class="list-group">                                            <button class="list-group-item list-group-item-action"                                                *ngFor="let folder of equirectangularMetadatas.folders; let i = index"                                                [class.active]="i === equirectangularFolderCurrentSelected"                                                (click)="OnClickFolderImage(i)">                                                {{folder.label}}                                            </button>                                        </div>                                    </div>                                </div>                            </div>                            <div class="selection-file">                                <div class="card">                                    <div class="card-body" style="flex:1; overflow-y: scroll;">                                        <h5 class="card-title">Imagens</h5>                                        <div class="list-group" *ngIf="equirectangularFolderCurrentSelected >= 0">                                            <button type="button" class="list-group-item list-group-item-action"                                                *ngFor="let file of equirectangularMetadatas.folders[equirectangularFolderCurrentSelected].files; let i = index"                                                [class.active]="i === equirectangularImageCurrentSelected"                                                (click)="OnClickPathImage(i)">                                                {{file}}                                            </button>                                        </div>                                    </div>                                    <div class="card-loading-message">                                        <div class="card-loading-text">Selecione uma imagem</div>                                    </div>                                    <!-- <img src="..." class="card-img-bottom" alt="..."> -->                                </div>                            </div>                        </div>                    </div>                    <div class="modal-footer">                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"                            (click)="OnClickSelectImage()">Selecionar Imagem</button>                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>                    </div>                </div>            </div>        </div>        <div class="modal fade modal-inside" id="modalSelectModel" data-bs-backdrop="static" data-bs-keyboard="false"            tabindex="-1" aria-labelledby="modalSelectModelLabel" aria-hidden="true">            <div class="modal-dialog modal-fullscreen">                <div class="modal-content">                    <div class="modal-header">                        <h5 class="modal-title" id="modalSelectModelLabel">Escolher Modelo</h5>                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                    </div>                    <div class="modal-body">                        <div class="selection-container">                            <div class="selection-folder">                                <div class="card">                                    <div class="card-body">                                        <h5 class="card-title">Pastas</h5>                                        <div class="list-group">                                            <button class="list-group-item list-group-item-action"                                                *ngFor="let folder of modelsMetadatas.folders; let i = index"                                                [class.active]="i === modelsFolderCurrentSelected"                                                (click)="OnClickFolderModel(i)">                                                {{folder.label}}                                            </button>                                        </div>                                    </div>                                </div>                            </div>                            <div class="selection-file">                                <div class="card">                                    <div class="card-body" style="flex:1; overflow-y: scroll;">                                        <h5 class="card-title">Modelos</h5>                                        <ul class="list-group" *ngIf="modelsFolderCurrentSelected >= 0">                                            <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"                                                *ngFor="let file of modelsMetadatas.folders[modelsFolderCurrentSelected].files; let i = index"                                                style="cursor: pointer;" [class.active]="i === modelCurrentSelected"                                                (click)="OnClickPathModel(i)">                                                <div class="ms-2 me-auto">                                                    {{file.file}}                                                </div>                                                <span class="badge bg-primary rounded-pill">{{file.size}}MB</span>                                            </li>                                        </ul>                                    </div>                                    <!-- <img src="..." class="card-img-bottom" alt="..."> -->                                </div>                            </div>                        </div>                    </div>                    <div class="modal-footer">                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"                            (click)="OnClickSelectModel()">Selecionar Modelo</button>                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>                    </div>                </div>            </div>        </div>    </div>    <div class="settingsContainer">        <!-- As a heading -->        <nav class="navbar navbar-light bg-light">            <div class="container-fluid">                <span class="navbar-brand mb-0 h1">Configurações</span>            </div>        </nav>        <div class="accordion" id="accordionSettings" *ngIf="scenario.getCurrentCameraSettings()">            <div class="accordion-item">                <h2 class="accordion-header" id="headerCameraSettings">                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"                        data-bs-target="#collapseCameraSettings" aria-expanded="false"                        aria-controls="collapseCameraSettings">                        Configurações da Câmera Atual                    </button>                </h2>                <div id="collapseCameraSettings" class="accordion-collapse collapse"                    aria-labelledby="headerCameraSettings" data-bs-parent="#accordionSettings">                    <div class="card">                        <div class="card-body">                            <h6 class="card-subtitle mb-2 text-muted">Posição da Câmera</h6>                            <div style="display: flex; flex-direction: row;">                                <div class="form-floating m-1">                                    <input type="number" class="form-control form-control-sm" id="numCameraX"                                        placeholder="0" step=".5" [(ngModel)]="scenario.getCurrentCameraSettings()!.positionX"                                        (ngModelChange)="OnChangeCameraPosition()">                                    <label for="numCameraX">X</label>                                </div>                                <div class="form-floating m-1">                                    <input type="number" class="form-control form-control-sm" id="numCameraY"                                        placeholder="0" step=".5" [(ngModel)]="scenario.getCurrentCameraSettings()!.positionY"                                        (ngModelChange)="OnChangeCameraPosition()">                                    <label for="numCameraY">Y</label>                                </div>                                <div class="form-floating m-1">                                    <input type="number" class="form-control form-control-sm" id="numCameraZ"                                        placeholder="0" step=".5" [(ngModel)]="scenario.getCurrentCameraSettings()!.positionZ"                                        (ngModelChange)="OnChangeCameraPosition()">                                    <label for="numCameraZ">Z</label>                                </div>                            </div>                            <h6 class="card-subtitle  mt-2 mb-2 text-muted">Rotação da Imagem</h6>                            <label for="sliderEquirectangularRotationY" class="form-label">Rotação em Y                                ({{scenario.getCurrentCameraSettings()!.rotationY}}°)</label>                            <input type="range" class="form-range" min="0" max="360" id="sliderEquirectangularRotationY"                                [(ngModel)]="scenario.getCurrentCameraSettings()!.rotationY"                                (ngModelChange)="OnChangeEquirectangularImageRotation()">                            <h6 class="card-subtitle mt-2 mb-2 text-muted">Aspectos</h6>                            <div style="display: flex; flex-direction: row;">                                <div class="form-floating m-1">                                    <input type="number" class="form-control form-control-sm" id="numFOV"                                        placeholder="0" step=".1" [value]="FOV" disabled>                                    <label for="numFOV">FOV</label>                                </div>                                <div class="form-floating m-1">                                    <input type="number" class="form-control form-control-sm" id="numNear"                                        placeholder="0" step=".1" [value]="NEAR" disabled>                                    <label for="numNear">Near</label>                                </div>                                <div class="form-floating m-1">                                    <input type="number" class="form-control form-control-sm" id="numFar"                                        placeholder="0" step=".1" [value]="FAR" disabled>                                    <label for="numFar">Far</label>                                </div>                            </div>                            <div style="display: flex; flex-direction: row;">                                <div class="form-floating m-1" style="flex: 1;">                                    <input type="text" class="form-control form-control-sm" id="textDimensions"                                        placeholder="0" [value]="(canvasWidth + \'x\' + canvasHeight)" disabled>                                    <label for="textDimensions">Dimensões</label>                                </div>                            </div>                            <!-- <h6 class="card-subtitle mt-2 mb-2 text-muted">Look At</h6>                            <div style="display: flex; flex-direction: row;">                                <div class="form-floating m-1">                                    <input type="number" class="form-control form-control-sm" id="lookAtCameraX"                                        placeholder="0" step=".5" [(ngModel)]="cameraLookAt.x" disabled>                                    <label for="lookAtCameraX">X</label>                                </div>                                <div class="form-floating m-1">                                    <input type="number" class="form-control form-control-sm" id="lookAtCameraY"                                        placeholder="0" step=".5" [(ngModel)]="cameraLookAt.y" disabled>                                    <label for="lookAtCameraY">Y</label>                                </div>                                <div class="form-floating m-1">                                    <input type="number" class="form-control form-control-sm" id="lookAtCameraZ"                                        placeholder="0" step=".5" [(ngModel)]="cameraLookAt.z" disabled>                                    <label for="lookAtCameraZ">Z</label>                                </div>                            </div> -->                        </div>                    </div>                </div>            </div>        </div>        <hr *ngIf="scenario.getCurrentCameraSettings()">        <div class="card">            <div class="card-body">                <h5 class="card-title">Estatísticas</h5>                <h6 class="card-subtitle mb-2 text-muted">Informações da Cena</h6>                <p class="card-text mb-0">FPS: {{fpsCounter}}</p>                <p class="card-text">Triângulos: {{trianglesCounter}}</p>            </div>        </div>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CanvasComponent', 'selector': 'app-canvas'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CanvasComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CanvasComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
